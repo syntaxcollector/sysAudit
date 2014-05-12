@@ -257,6 +257,7 @@ function ftpUpload {
 
 sysSum
 smartStat
+diskIO
 diskSum
 raidCheck
 spotLight
