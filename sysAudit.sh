@@ -119,6 +119,14 @@ function smartStat {
 	done
 }
 
+### DISK I/O ERRORS ###
+function diskIO {
+	echo  >> $checkLog
+        echo -----DISK IO CHECK------- >> $checkLog
+        diskchk=`cat /var/log/system.log | egrep ".*disk.*I/O.*"`
+	echo $diskchk >> $checkLog
+}
+
 ### DISK USAGE ###
 function diskSum {
 	echo  >> $checkLog
